@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PayU Demo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>PayU Demo</h1>
+        <form id="payment-form">
+            <label for="buyer-name">Nombre del comprador:</label>
+            <input type="text" id="buyer-name" placeholder="Nombre completo" required>
+
+            <label for="buyer-email">Correo electrónico del comprador:</label>
+            <input type="email" id="buyer-email" placeholder="correo@ejemplo.com" required>
+
+            <h2>Datos de envío</h2>
+
+            <label for="shipping-street">Calle de envío:</label>
+            <input type="text" id="shipping-street" placeholder="Calle de envío" required>
+
+            <h2>Datos de la tarjeta de crédito</h2>
+
+            <label for="card-number">Número de tarjeta:</label>
+            <input type="text" id="card-number" placeholder="Ingresa el número de tarjeta" required>
+
+            <label for="expiration-date">Fecha de expiración:</label>
+            <input type="text" id="expiration-date" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="CVV" required>
+
+            <button type="button" id="pay-button">Pagar</button>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
